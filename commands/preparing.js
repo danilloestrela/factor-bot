@@ -22,6 +22,9 @@ module.exports = {
 			const devsMention = process.env.DEV_MENTIONS;
 			// Get the input from the user
 			const project = interaction.options.getString('project');
+			if (project.length < 5) {
+				return await interaction.reply({ content: 'Project name must have at least 5 characters.', ephemeral: true });
+			}
 			const message = '@everyone \n' +
                             '**Preparing to push:** \n' +
                             '- **Projects:**\n' +

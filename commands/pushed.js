@@ -26,7 +26,13 @@ module.exports = {
 			const channel = await interaction.client.channels.fetch(devUpdatesChannelId);
 			// Get the input from the user
 			const project = interaction.options.getString('project');
+			if (project.length < 5) {
+				return await interaction.reply({ content: 'Project name must have at least 5 characters.', ephemeral: true });
+			}
 			const branch = interaction.options.getString('branch');
+			if (branch.length < 4) {
+				return await interaction.reply({ content: 'Project name must have at least 4 characters.', ephemeral: true });
+			}
 			const message = `@everyone  **Project(${project}) pushed under \`\`${branch}\`\` **`;
 			// Send the message
 			await channel.send(message);
