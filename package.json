@@ -1,0 +1,33 @@
+{
+  "name": "factor-bot",
+  "version": "1.0.0",
+  "description": "General purpose discord bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danilloestrela/factor-bot.git"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "general",
+    "purposes",
+    "git"
+  ],
+  "author": "Danillo Estrela",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danilloestrela/factor-bot/issues"
+  },
+  "homepage": "https://github.com/danilloestrela/factor-bot#readme",
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.35.0"
+  }
+}
